@@ -1,15 +1,11 @@
-import sys
-n1 = int(input())
-L1 = [ int(x) for x in input().split()]
-k1 = n1
-L2 = [1]*n1
-if L1 == [1,2,4,1,2] :
-    print(9)
-    sys.exit()
-if L1[0] > L1[1] :
-    L2[0] += 1
-for i in range(1,n1) :
-    if L1[i] > L1[i-1] :
-        L2[i] = L2[i-1] + 1
-k1 = sum(L2)
-print(k1)
+nnn1=int(input())
+li1=list(map(int,input().split()))
+a=[1]*nnn1
+for i in range(nnn1):
+    if(i==0):
+        if(li1[i]>li1[i+1]):
+            a[i]=a[i]+a[i+1]
+    elif(i>0):
+        if(li1[i]>li1[i-1]):
+            a[i]=a[i]+a[i-1]
+print(sum(a))
