@@ -1,0 +1,10 @@
+string3='dhoni'
+in3=input()
+list31=list(in3)
+list31.sort()
+lst3=list(string3)
+lst3.sort()
+if(lst3==list31):
+  print("yes")
+else:
+  print("no")
