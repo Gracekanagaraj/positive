@@ -1,0 +1,12 @@
+sbbi1,ri1=list(map(int,input().split()))
+sbi2,ri2=list(map(int,input().split()))  
+sbi3,ri3=list(map(int,input().split()))  
+sbi4,ri4=list(map(int,input().split())) 
+a=ri2-ri1
+b=ri3-ri4
+c=sbi3-sbi2
+d=sbi4=sbbi1
+if(a==b==c==d):
+  print("yes")
+else:
+  print("no")
