@@ -1,12 +1,10 @@
-ni, mi = map(int, input().split())
-li1 = list(map(int, input().split()))
-li2 = list(map(int, input().split()))
-flag = 1
-for i in range(0, len(l2)):
-    if li2[i] not in li1:
-        flag = 0
-        break
-if flag:
-    print('YES')
+size1=input()
+arry1=input().rstrip()
+arry2=input().rstrip()
+arry1=list(map(int,arry1.split(" ")))
+arry2=list(map(int,arry2.split(" ")))
+diff=list(set(arry2)-set(arry1))
+if len(diff)==0:
+	print("YES")
 else:
-    print('NO')
+	print("NO")
