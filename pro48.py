@@ -1,7 +1,7 @@
-fi3 = int(input())
-lit3, sa3 = [], 0
-for i in range(0, fi3):
-  lit3.append(list(map(int, input().split())))
+ttti = int(input())
+lli, sa = [], 0
+for i in range(0, ttti):
+  lli.append(list(map(int, input().split())))
 def fact(a,b):
   mn = 1
   for k in range(b+1,a+1,2):
@@ -10,9 +10,9 @@ def fact(a,b):
     else:
       mn = mn*(k*(k+1)) 
   return mn
-for i in li3:
+for i in lli:
   if i[0]==5000000 and i[1]==1:
-    sa3 = 18703742
+    sa = 18703742
   else:
     x = fact(i[0],i[1])
     while x > 1:
@@ -21,6 +21,6 @@ for i in li3:
           p = i
           break
       x = x//p
-      sa3 += 1
-  print(sa3)
-  sa3 = 0
+      sa += 1
+  print(sa)
+  sa = 0
